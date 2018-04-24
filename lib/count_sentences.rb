@@ -27,6 +27,6 @@ end
   end
 
   def count_sentences
-     self.split("_")
+     self.split("")
   end
 end
