@@ -27,6 +27,7 @@ end
   end
 
   def count_sentences
-     self.split(/[.!?]/).size
+     self.split(/[.!?]/).reject do |non_words|
+       non_words.size
   end
 end
