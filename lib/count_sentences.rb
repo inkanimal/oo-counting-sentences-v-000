@@ -28,6 +28,6 @@ end
 
   def count_sentences
      self.split(/[.!?]/).reject do |non_words|
-       non_words.size
+       non_words.empty?.size
   end
 end
